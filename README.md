@@ -93,11 +93,32 @@ It can be used for activities such as:
 This network isolates the virtual machines from the real network, while still allowing them to communicate with each other and access the Internet.
   ![Description](Co.net.png)
 
-## Step 4: Import the Kali Linux Virtual Machine
+## Step 4: Import the Kali Linux Virtual Machine and configure
 
 1. Download the VirtualBox image of Kali from https://www.kali.org/get-kali/ (*Virtual Machines* section)
 2. Extract the `.7z` archive with 7-Zip
 3. In VirtualBox: **Machine → Add**, then select the extracted `.vbox` file
+4. Check and adjust the machine configuration (**Settings**):
+
+### System
+Configuration of the processor, memory and boot order.
+
+![Description](sys.png)
+
+### Display
+Configuration of video memory and display.
+
+![Description](affichage.png)
+
+### Storage
+Check of the disk and the optical drive. The ISO image must be removed from the drive after installation.
+
+![Description](storage.png)
+
+### Network
+Adapter 1 set to **NAT Network** on `NATNetwork`.
+
+![Description](network.png)
 
 ## Step 5: Configure the IP Address of Kali Linux
 
@@ -122,6 +143,7 @@ ping -c 3 8.8.8.8
 ```
 
 The first `ping` tests the gateway, the second tests Internet access.
+![Description](kali_virtual.png)
 
 ## Step 6: Take a Snapshot
 
@@ -132,6 +154,8 @@ The first `ping` tests the gateway, the second tests Internet access.
 5. Click **OK**
 
 A snapshot saves the exact state of the VM, so I can restore it if a later change breaks the machine.
+![Description](snapshot.png)
+
 
 ## Issue Encountered: The Installation Restarts at Every Boot
 
