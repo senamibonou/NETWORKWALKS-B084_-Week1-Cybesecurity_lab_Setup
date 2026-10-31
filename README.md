@@ -91,6 +91,7 @@ It can be used for activities such as:
 5. Enable DHCP (optional), then apply
 
 This network isolates the virtual machines from the real network, while still allowing them to communicate with each other and access the Internet.
+  ![Description](Co.net.png)
 
 ## Step 4: Import the Kali Linux Virtual Machine
 
